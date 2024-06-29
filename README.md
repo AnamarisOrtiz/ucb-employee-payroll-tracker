@@ -11,4 +11,4 @@ SO THAT I can see my employees' payroll data and properly budget for the company
 ```
 
 
-The application is deployed at the following [url](type-url-here): 
+The application is deployed at the following [url](https://anamarisortiz.github.io/ucb-employee-payroll-tracker/): 
