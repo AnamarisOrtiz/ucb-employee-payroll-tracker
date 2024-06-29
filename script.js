@@ -9,7 +9,7 @@ const collectEmployees = function() {
    {
     const firstName = prompt("Enter First Name");
     const lastName = prompt("Enter Last Name");
-    const salary = prompt("Enter Salary");
+    const salary = Number(prompt("Enter Salary"));
      employeeRoster.push({
       firstName,
       lastName,
@@ -27,6 +27,11 @@ const collectEmployees = function() {
 // Display the average salary
 const displayAverageSalary = function(employeesArray) {
   // TODO: Calculate and display the average salary
+  let sum = 0;
+  employeesArray.forEach(employee => {
+    sum += employee.salary;
+  });
+  console.log(`The average salary between our ${employeesArray.length} employee(s) is $${sum / employeesArray.length}`);
 }
 
 // Select a random employee
