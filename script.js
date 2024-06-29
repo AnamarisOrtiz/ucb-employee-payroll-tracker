@@ -9,7 +9,11 @@ const collectEmployees = function() {
    {
     const firstName = prompt("Enter First Name");
     const lastName = prompt("Enter Last Name");
-    const salary = Number(prompt("Enter Salary"));
+    let salary = Number(prompt("Enter Salary"));
+    // if salary is not a number, default to $0
+    if (isNaN(salary)){
+        salary = 0;
+    }
      employeeRoster.push({
       firstName,
       lastName,
